@@ -3,7 +3,7 @@ export ZSH="/Users/jadenlemmon/.oh-my-zsh"
 
 ZSH_THEME="af-magic"
 
-lugins=(git)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,3 +66,5 @@ source /usr/local/opt/autoenv/activate.sh
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
 
+unsetopt inc_append_history
+unsetopt share_history
