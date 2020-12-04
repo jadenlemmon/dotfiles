@@ -13,10 +13,13 @@ alias voyage='cd ~/Code/Voyage'
 alias heydoc='cd ~/Code/HeyDoctor'
 alias dotfiles='cd ~/Code/Jaden/dotfiles'
 alias zsh='vim ~/Code/Jaden/dotfiles/zsh/.zshrc'
+alias linkui='npm link @actovos-consulting-group/ui-core'
 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config:$HOME/.kube/jaden.config
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export AUTOENV_ENABLE_LEAVE="true"
@@ -56,6 +59,8 @@ export AUTOENV_ASSUME_YES=1
 export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export PATH="/Users/jadenlemmon/Library/Python/3.8/bin:$PATH"
+export PATH="/usr/local/Cellar/php/7.4.11/bin:$PATH"
+export PATH="/usr/local/Cellar/php/7.4.11/sbin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -68,3 +73,6 @@ export PATH="$HOME/.serverless/bin:$PATH"
 
 unsetopt inc_append_history
 unsetopt share_history
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
